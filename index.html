@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d4b5255a-4854-487f-bd6f-589eac25094b/d54wx2s-ee56a59c-a122-48b6-a0bb-89418a35b149.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9kNGI1MjU1YS00ODU0LTQ4N2YtYmQ2Zi01ODllYWMyNTA5NGIvZDU0d3gycy1lZTU2YTU5Yy1hMTIyLTQ4YjYtYTBiYi04OTQxOGEzNWIxNDkucG5nIn1dXX0.lxeew49uAcx_o1gHevR98cSip2_RDdliupvDbzanYcI" rel="icon">
+  <title>Amaterasu</title>
+</head>
+
+<body>
+  <div class="container" id="container">
+    <nav class="navbar">
+      <input type="checkbox" id="check">
+      <label for="check">
+        <i class="material-icons" id="button">subject</i>
+        <i class="material-icons" id="close">close</i>
+      </label>
+      <h1>AMATERASU<span>.</span></h1>
+      <ul>
+        <li><a href="index.html">Home Shop</a></li>
+        <li><a href="https://www.instagram.com/p/CXoRvjevG-N/?utm_source=ig_web_copy_link">Social Media</a></li>
+        <li><a href="https://wa.link/ukd3qc">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="welcome" id="welcome">WELCOME TO MY GHOST SHOES</div>
+
+    <div class="cta elemen-second" id="cta">
+      <model-viewer src="assets/scene.gltf" camera-controls camera-orbit="45deg 50deg" disable-zoom auto-rotate
+        shadow-intensity="1"></model-viewer>
+    </div>
+
+    <div class="newBox" id="newBox">
+      <div class="productBox" id="productBox1">
+        <div class="titleBox">Detail Product</div>
+        <img src="assets/img/nike1.png" alt="" />
+        <div class="titleBox">Nike best one</div>
+        <div class="descriptionBox">Best product in the world of champion ship football club.</div>
+      </div>
+      <div class="productBox" id="productBox2">
+        <div class="titleBox">Detail Product</div>
+        <img src="assets/img/nike2.png" alt="" />
+        <div class="titleBox">Nike best two</div>
+        <div class="descriptionBox">Best seconde product, same with Manchaster United now in my second heart because
+          always lose streak.</div>
+      </div>
+      <div class="productBox" id="productBox3">
+        <div class="titleBox">Detail Product</div>
+        <img src="assets/img/nike3.png" alt="" />
+        <div class="titleBox">Nike sport</div>
+        <div class="descriptionBox">Best seller in town now, your papiculow used it shoes to do trow in to your ass.
+        </div>
+      </div>
+      <div class="productBox" id="productBox4">
+        <div class="titleBox">Detail Product</div>
+        <img src="assets/img/nike4.png" alt="" />
+        <div class="titleBox">Nike jordan</div>
+        <div class="descriptionBox">only one shoes most popular in level RT, you can get of a pitulasan championship.
+        </div>
+      </div>
+      <div class="productBox" id="productBox5">
+        <div class="titleBox">Detail Product</div>
+        <img src="assets/img/nike5.png" alt="" />
+        <div class="titleBox">Nike Ardila</div>
+        <div class="descriptionBox">Best performence in the khitchen, about she is liked a singing with sotel.</div>
+      </div>
+      <div class="productBox" id="productBox6">
+        <div class="titleBox">Detail Product</div>
+        <img src="assets/img/nike6.png" alt="" />
+        <div class="titleBox">Nike Air</div>
+        <div class="descriptionBox">Flyly shoes, jujurly in a sometime i can flyed with the shoes about i used in the
+          pool and me kepleset air.</div>
+      </div>
+      <div class="button-to-back" id="button-back">
+        <input type="button" value="Back to Homepage" class="button" onclick="backToHomepage('container')"/>
+      </div>
+    </div>
+    <div class="wrapper" id="wrapper">
+      <div class="card elemen-first">
+        <div class="product" id="product1" onclick="getDetail(1)">
+          <img src="assets/img/nike1.png" alt="" />
+        </div>
+        <div class="detail">
+          <div class="title">Nike best one</div>
+          <div class="description">Best product</div>
+        </div>
+      </div>
+      <div class="card elemen-second">
+        <div class="product" id="product2" onclick="getDetail(2)">
+          <img src="assets/img/nike2.png" alt="" />
+        </div>
+        <div class="detail">
+          <div class="title">Nike best two</div>
+          <div class="description">Best seconde product</div>
+        </div>
+      </div>
+      <div class="card elemen-first">
+        <div class="product" id="product3" onclick="getDetail(3)">
+          <img src="assets/img/nike3.png" alt="" />
+        </div>
+        <div class="detail">
+          <div class="title">Nike sport</div>
+          <div class="description">Best seller</div>
+        </div>
+      </div>
+      <div class="card elemen-second">
+        <div class="product" id="product4" onclick="getDetail(4)">
+          <img src="assets/img/nike4.png" alt="" />
+        </div>
+        <div class="detail">
+          <div class="title">Nike jordan</div>
+          <div class="description">Best anyone</div>
+        </div>
+      </div>
+      <div class="card elemen-first">
+        <div class="product" id="product5" onclick="getDetail(5)">
+          <img src="assets/img/nike5.png" alt="" />
+        </div>
+        <div class="detail">
+          <div class="title">Nike Ardilaa</div>
+          <div class="description">Best performence</div>
+        </div>
+      </div>
+      <div class="card elemen-first">
+        <div class="product" id="product6" onclick="getDetail(6)">
+          <img src="assets/img/nike6.png" alt="" />
+        </div>
+        <div class="detail">
+          <div class="title">Nike Air</div>
+          <div class="description">Flyly shoes</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="top-item" id="top-item">
+    <div class="top-item-wrapper">
+      <div class="top-item-row">
+        <img class="elemen-second"  src="assets/img/nike1.png" alt="" />
+        <div class="top-item-detail">
+          <h3 class="elemen-second">Nike best one</h3>
+          <p class="elemen-first">Best shoes in the world and it shoes are used by messi and ronaldo</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+      <p>Designed by Faizahel Joasa you can call me if you exaited with my project seru-seruan bersama kang Dea Afrizal
+        <br> and point a view just upgrading skill with them. hubungi kami <a href="https://wa.link/ukd3qc"><u>lebih
+            lanjut</u></a></p>
+    </div>
+  <script src="tweak.js"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+</html>
